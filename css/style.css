@@ -6,31 +6,39 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+p::first-letter {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  padding-right: 5px;
 }
 
 div.header,
 div.form {
-  position: fixed;
-  margin: 40px;
-  padding: 40px;
+  position: absolute;
   width: calc(50vw - 80px);
   height: calc(100vh - 80px);
+  padding: 40px;
+  margin: 40px;
   border-radius: 40px;
   background-color: #f2f2f2;
-  -webkit-transition: 400ms -webkit-transform;
-  transition: 400ms -webkit-transform;
-  transition: 400ms transform;
-  transition: 400ms transform, 400ms -webkit-transform;
+  /*	transition: 400ms transform; */
   -webkit-box-shadow: 0 0 50px #72e0d1;
           box-shadow: 0 0 50px #72e0d1;
-}
-
-div.header:hover,
-div.form:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  /*
+	&:hover {
+		transform: scale(1.1);
+	}
+*/
 }
 
 .header {
@@ -40,25 +48,14 @@ div.form:hover {
   border: 1px dotted #72e0d1;
 }
 
-.header h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-}
-
-.header p::first-letter {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 36px;
-}
-
 .header a {
   display: block;
 }
 
 .header a::before {
-  content: "Google.com";
+  content: "Click here for more information";
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   background-color: #f2f2f2;
   color: darkblue;
@@ -157,7 +154,7 @@ div.form:hover {
   height: 80px;
   margin-top: 40px;
   border: 4px solid #72e0d1;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   background-color: darkblue;
   color: #72e0d1;
